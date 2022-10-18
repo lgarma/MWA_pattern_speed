@@ -31,7 +31,7 @@ project
 │       └─── 12700-6102
 │   └─── Complete_Sample
 │       │ bar_cr.jpg
-│       │ bar_cr.jpg
+│       │ bar_med_om_med.jpg
 │       │ bar_radius.jpg
 │       │ bar_rQ.jpg
 │       │ correlation.jpg
@@ -42,8 +42,9 @@ project
 │       │ inclination.jpg
 │       │ NSA_stellar_mass.jpg
 │       │ om.jpg
-│       │ om_cr.jpg
 │       │ om_relative_error.jpg
+│       │ om_med_vc_flat.jpg
+│       │ om_mw.jpg
 │       │ PA_diff.jpg
 │       │ rpar.jpg
 │       │ rpar_mw.jpg
@@ -51,6 +52,7 @@ project
 │   
 └─── Tables
     │   Appendix_table.csv
+    │   Appendix_table.tex
 ```
 
 ## Brief description of the files
@@ -70,8 +72,8 @@ Figures in directory *Complete_Sample* correspond to the following figures in th
 - PA_diff: Figure 5
 - om, cr, rpar: Figure 13
 - bar_cr: Figure 14
-- om_cr: Figure 15
-- bar_om: Figure 16
+- bar_med_om_med: Figure 15
+- om_med_vc_flat: Figure 16
 - correlation: Figure 17
 - inc_rpar: Figure 18
 - om_mw and rpar_mw: Figure 19
@@ -80,6 +82,8 @@ Figures in directory *Complete_Sample* correspond to the following figures in th
 Columns in the table *Appendix_table.csv*:
 - Gal: Galaxy ID
 - nsa_mstar: NSA stellar mass
+- nsa_sersic_n: NSA sersic index
+- rad_vel_sigma: Pipe3D velocity-to-velocity dispersion ratio within 1 effective radius
 - pa_w: weighted PA
 - pa_w_sigma: weighted PA error
 - paph: Photometric PA
@@ -88,11 +92,15 @@ Columns in the table *Appendix_table.csv*:
 - pakn_e: Stellar symmetric PA error
 - pamod: H alpha kinematic model PA
 - pamod_e: H alpha kinematic model PA error
+- bar_pa: bar photometric PA
+- bar_pa_e: bar photometric PA error
 - inc_w: weighted inclination
 - inc_w_ep: 1 sigma upper error on weighted inclination
 - inc_w_em: 1 sigma lower error on weighted inclination
 - vc_flat: disc flat circular velocity
 - vc_flat_err: disc flat circular velocity error
+- bar_dep: deprojected bar radius
+- bar_dep_e: deprojected bar radius error
 - bar_med: median bar radius
 - bar_upp: 1 sigma upper error on bar radius
 - bar_low: 1 sigma lower error on bar radius
